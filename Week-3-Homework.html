@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<link rel="stylesheet" type="text/css" href="assets/reset.css">
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
+	<link rel="stylesheet" type="text/javascript" href="assets/game.js">
+	<script type="text/javascript" href="assets/game.js"> 
+	var letters = [
+		1: "h",
+		2: "g",
+		3: "t",
+		4: "l",
+		5: "b",
+		6: "r",
+		7: "x",
+		8: "z",
+		9: "e",
+		10: "i",
+]
+var wins = 0;
+var losses = 0;
+var guesesLeft = 9;
+var guessesSoFar = [];
+
+function myFunction() {
+   document.getElementById("wins1").innerHTML = (var wins = );
+}
+function myFunction() {
+   document.getElementById("losses1").innerHTML = (var losses = );
+}
+
+
+document.onkeyup = function(event){
+	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();}
+
+for (var i=0; i<letters.length; i++) {
+	if (userGuess == (letters[i])){
+		wins++;
+	}
+	else if (userGuess != (letters[i])){
+		losses++ && document.write(userGuess) && guesesLeft--;
+	}
+
+}
+ 
+
+	
+	guessesSoFar.push(userGuess);
+    document.getElementById("guessesSoFar").innerHTML = "Guesses so far:" + guessesSoFar;
+    console.log(guessesSoFar);
+    break;
+
+
+
+
+
+
+
+
+
+
+
+
+	//var wins = 0;
+//var losses = 0;
+//var word1before = ["_","_","_","_","_","_","_"];
+//var word1 = ['h','a','t','c','h','e','t'];
+//var arr = (userGuess);
+//var brr = (word1);
+
+//document.onkeyup = function(event){
+//	var userGuess = String.fromCharCode(event.keyCode).toLowerCase();}
+
+//function wordGuess(arr,brr){
+//	for (var i=0; i<word1before.length && i<word1.length; i++) 
+//		    if (userGuess = word1[i]){
+//	document.write(userGuess)
+//	}
+	//	{console.log(word1[i])
+	//	console.log(word1before[i])}
+  //  if (userGuess = word1[i]){
+//	document.write(userGuess)
+//	}
+
+
+
+		//if ((arr.length[i])==(brr.length[i])}
+		//{console.log(userGuess);}
+//} 
+//  </script>
+</head>
+<body>
+
+<h1>The Psychic Game</h1>
+<h2 id="wins1" >Win:</h2>
+<h3 id="losses1">Losses:</h3>
+<h4>Guesses Left:</h4>
+<h5>Your Guesses so far:</h5>
+
+
+	
+</body>
+</html>
